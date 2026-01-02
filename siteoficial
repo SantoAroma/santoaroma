@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Santo Aroma | Saboaria Artesanal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="Santo Aroma" class="logo">
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#encomenda">Encomenda</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section id="inicio" class="hero">
+  <h1>Santo Aroma</h1>
+  <p>Cuidado artesanal que perfuma o corpo e o lar.</p>
+  <a href="#catalogo" class="btn">Ver Catálogo</a>
+</section>
+
+<section id="sobre">
+  <h2>Sobre a Santo Aroma</h2>
+  <p>
+    A Santo Aroma nasce do cuidado artesanal, da delicadeza e da atenção aos detalhes.
+    Cada produto é feito para proporcionar bem-estar, acolhimento e experiências sensoriais únicas.
+  </p>
+</section>
+
+<section id="catalogo">
+  <h2>Catálogo</h2>
+  <div id="produtos" class="grid"></div>
+</section>
+
+<section id="encomenda">
+  <h2>Fazer Encomenda</h2>
+  <form action="https://formsubmit.co/lucasrochaanjos@gmail.com" method="POST">
+    <input type="text" name="nome" placeholder="Seu nome" required>
+    <input type="text" name="whatsapp" placeholder="WhatsApp" required>
+    <textarea name="pedido" placeholder="Descreva seu pedido" required></textarea>
+
+    <select name="entrega">
+      <option value="Entrega">Entrega</option>
+      <option value="Retirada">Retirada</option>
+    </select>
+
+    <input type="hidden" name="_captcha" value="false">
+    <button type="submit">Enviar Pedido</button>
+  </form>
+
+  <p class="pagamento">
+    Pagamento via <strong>PIX</strong> ou <strong>FINGPAY</strong>.  
+    Após o pedido, confirme pelo WhatsApp.
+  </p>
+
+  <a class="whatsapp" href="https://wa.me/5571984277248" target="_blank">
+    Falar no WhatsApp
+  </a>
+</section>
+
+<section id="contato">
+  <h2>Contato</h2>
+  <p>WhatsApp: (71) 98427-7248</p>
+  <p>Email: lucasrochaanjos@gmail.com</p>
+</section>
+
+<footer>
+  <p>© Santo Aroma – Saboaria Artesanal</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
