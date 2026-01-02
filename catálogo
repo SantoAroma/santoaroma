@@ -1,0 +1,21 @@
+script.js
+const url = "https://opensheet.elk.sh/SUA_PLANILHA_ID/Sheet1";
+
+fetch(url)
+  .then(resposta => resposta.json())
+  .then(produtos => {
+    const area = document.getElementById("produtos");
+
+    produtos.forEach(produto => {
+      if (produto.disponivel === "SIM") {
+        area.innerHTML += `
+          <div class="card">
+            <img src="${produto.imagem}" alt="${produto.nome}">
+            <h3>${produto.nome}</h3>
+            <p>${produto.descricao}</p>
+            <p><strong>R$ ${produto.preco}</strong></p>
+          </div>
+        `;
+      }
+    });
+  });
